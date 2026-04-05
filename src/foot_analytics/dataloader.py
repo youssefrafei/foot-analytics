@@ -1,5 +1,5 @@
 """
-Module dataloader — Chargement des données depuis des fichiers CSV.
+Module dataloader - Chargement des données depuis des fichiers CSV.
 
 Le DataLoader lit les fichiers CSV (équipes et joueurs) à l'aide de pandas,
 instancie les classes Joueur et Equipe, et les relie entre elles. Il rattache
@@ -33,9 +33,9 @@ class DataLoader:
     def __repr__(self) -> str:
         return f"DataLoader({str(self.data_dir)!r})"
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Chargement brut des CSV                                            #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def charger_csv(self, nom_fichier: str) -> pd.DataFrame:
         """
@@ -55,9 +55,9 @@ class DataLoader:
             raise FileNotFoundError(f"Fichier introuvable : {chemin}")
         return pd.read_csv(chemin)
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Construction des objets                                            #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def charger_equipes(self, nom_fichier: str = "equipes.csv") -> dict[str, Equipe]:
         """
@@ -142,9 +142,9 @@ class DataLoader:
 
         return joueurs
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Méthode principale : charger une saison complète                   #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def charger_saison(
         self,
