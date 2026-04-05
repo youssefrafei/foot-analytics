@@ -1,5 +1,5 @@
 """
-Module joueur — Représentation d'un joueur de football et de ses statistiques.
+Module joueur - Représentation d'un joueur de football et de ses statistiques.
 
 Ce module constitue la brique de base du projet. La classe Joueur encapsule
 les statistiques individuelles d'un joueur sur une saison et expose des
@@ -43,7 +43,7 @@ class Joueur:
         cartons_jaunes: int = 0,
         cartons_rouges: int = 0,
     ) -> None:
-        # --- Validation des entrées ---
+        # %%% Validation des entrées %%%
         if not nom or not nom.strip():
             raise ValueError("Le nom du joueur ne peut pas être vide")
         if not equipe or not equipe.strip():
@@ -81,9 +81,9 @@ class Joueur:
         """Représentation lisible (utilisateur)."""
         return f"{self.nom} ({self.equipe}) — {self.poste}"
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Propriétés : métriques dérivées calculées à la demande             #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     @property
     def buts_par_90(self) -> float:
