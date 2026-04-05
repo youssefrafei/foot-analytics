@@ -1,5 +1,5 @@
 """
-Module saison — Représentation d'une saison de Premier League.
+Module saison - Représentation d'une saison de Premier League.
 
 La classe Saison regroupe plusieurs Equipe (agrégation) et fournit
 des méthodes d'analyse à l'échelle de la ligue : classement,
@@ -17,7 +17,7 @@ class Saison:
     """
     Représente une saison complète de Premier League.
 
-    Pattern : AGRÉGATION — Saison CONTIENT des Equipe.
+    Pattern : AGRÉGATION - Saison CONTIENT des Equipe.
 
     Attributes:
         annee: Identifiant de la saison (ex: '2023-2024')
@@ -34,9 +34,9 @@ class Saison:
             for equipe in equipes:
                 self.ajouter_equipe(equipe)
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Méthodes spéciales                                                 #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def __repr__(self) -> str:
         return f"Saison({self.annee!r}, {len(self)} équipes)"
@@ -56,9 +56,9 @@ class Saison:
         """Teste si une équipe est dans la saison : 'Arsenal' in saison."""
         return nom_equipe in self._equipes
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Gestion des équipes                                                #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def ajouter_equipe(self, equipe: Equipe) -> None:
         """Ajoute une équipe à la saison."""
@@ -72,9 +72,9 @@ class Saison:
         """Récupère une équipe par son nom."""
         return self._equipes.get(nom)
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Classement                                                         #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def classement(self) -> list[Equipe]:
         """
@@ -108,9 +108,9 @@ class Saison:
 
         return "\n".join(lignes)
 
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
     #  Analyses                                                           #
-    # ------------------------------------------------------------------ #
+    # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def meilleures_attaques(self, n: int = 5) -> list[Equipe]:
         """Retourne les n équipes ayant marqué le plus de buts."""
