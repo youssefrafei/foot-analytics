@@ -1,5 +1,5 @@
 """
-Module visualisation — Graphiques d'analyse de la saison avec matplotlib.
+Module visualisation - Graphiques d'analyse de la saison avec matplotlib.
 
 Fournit des fonctions de visualisation : classement en barres, meilleures
 attaques/défenses, top buteurs, et radar de comparaison de joueurs.
