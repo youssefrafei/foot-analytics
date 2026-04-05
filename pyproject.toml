@@ -1,0 +1,17 @@
+[project]
+name = "foot-analytics"
+version = "0.1.0"
+description = "Outil d'analyse de statistiques de Premier League"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "numpy",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools.packages.find]
+where = ["src"]
