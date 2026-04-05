@@ -55,7 +55,7 @@ class Equipe:
         self._joueurs: list[Joueur] = []
 
     # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
-    #  Méthodes spéciales (dunder methods)                                #
+    #  Méthodes spéciales                                                #
     # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% #
 
     def __repr__(self) -> str:
