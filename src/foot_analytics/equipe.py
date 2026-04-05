@@ -1,5 +1,5 @@
 """
-Module equipe — Représentation d'une équipe de football.
+Module equipe - Représentation d'une équipe de football.
 
 La classe Equipe utilise le pattern d'AGRÉGATION : elle contient une
 collection de Joueur, mais ceux-ci peuvent exister indépendamment.
@@ -17,7 +17,7 @@ class Equipe:
     """
     Représente une équipe de Premier League sur une saison.
 
-    Pattern : AGRÉGATION — Equipe CONTIENT des Joueur.
+    Pattern : AGRÉGATION - Equipe CONTIENT des Joueur.
 
     Attributes:
         nom: Nom du club
