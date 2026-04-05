@@ -1,5 +1,5 @@
 """
-foot_analytics — Outil d'analyse de statistiques de Premier League.
+foot_analytics - Outil d'analyse de statistiques de Premier League.
 
 Ce package fournit des classes pour charger, manipuler et visualiser
 les données d'une saison de Premier League.
